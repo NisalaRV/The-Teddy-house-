@@ -1,0 +1,24 @@
+.My-txt{
+    -fx-text-fill: dodgerblue;
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+}
+.My-txt2{
+    -fx-text-fill: dodgerblue;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+.btn{
+    -fx-background-color: chartreuse;
+    -fx-text-fill: white;
+    -fx-background-radius: 50;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+.btn2{
+    -fx-background-color: darkturquoise;
+    -fx-text-fill: white;
+    -fx-background-radius: 50;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}

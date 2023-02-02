@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1980.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.TeddyHouse.Controller.CashierDashBoardController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="1000.0" prefWidth="1980.0" stylesheets="@Style/Css.css">
+         <children>
+            <AnchorPane layoutX="-10.0" layoutY="-10.0" prefHeight="1010.0" prefWidth="500.0" style="-fx-background-color: #3D2D61;">
+               <children>
+                  <Button layoutX="3.0" layoutY="239.0" mnemonicParsing="false" onAction="#CashCustomerOnAction" prefHeight="63.0" prefWidth="500.0" styleClass="my-Button" stylesheets="@Style/Css.css" text=" CUSTOMERS">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@acces/icon/icons8-people-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Text fx:id="time" fill="WHITE" layoutX="161.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TXT-time" text="20 : 14" textAlignment="CENTER" />
+                  <Text fx:id="date" fill="WHITE" layoutX="158.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TXT-date" text="wen ,16 November" textAlignment="CENTER" />
+                  <Button layoutX="-4.0" layoutY="310.0" mnemonicParsing="false" onAction="#CashOrderOnAction" prefHeight="63.0" prefWidth="502.0" styleClass="my-Button" stylesheets="@Style/Css.css" text="  ORDERS     ">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@acces/icon/icons8-purchase-order-80.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </AnchorPane>
+            <Button layoutX="-12.0" layoutY="365.0" mnemonicParsing="false" onAction="#CashStockOnAction" prefHeight="63.0" prefWidth="500.0" styleClass="my-Button" stylesheets="@Style/Css.css" text="   STOCK       ">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@acces/icon/icons8-storage-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="-5.0" layoutY="427.0" mnemonicParsing="false" onAction="#CashLendingOnAction" prefHeight="63.0" prefWidth="494.0" styleClass="my-Button" stylesheets="@Style/Css.css" text="  LENDING      ">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@acces/icon/icons8-purchase-order-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="-5.0" layoutY="491.0" mnemonicParsing="false" onAction="#CashBookingOnAction" prefHeight="63.0" prefWidth="498.0" styleClass="my-Button" stylesheets="@Style/Css.css" text="   BOOKINGS   ">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@acces/icon/icons8-calendar-13-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="-6.0" layoutY="554.0" mnemonicParsing="false" onAction="#CashSignoutOnAction" prefHeight="63.0" prefWidth="498.0" styleClass="my-Button" stylesheets="@Style/Css.css" text="   SIGNOUT      ">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@acces/icon/icons8-sign-out-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Pane fx:id="pane" layoutX="603.0" layoutY="3.0" prefHeight="994.0" prefWidth="1360.0">
+               <children>
+                  <Pane fx:id="pane1" layoutX="-111.0" layoutY="-11.0" prefHeight="1025.0" prefWidth="1567.0">
+                     <children>
+                        <ImageView fitHeight="755.0" fitWidth="1310.0" layoutX="116.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@acces/backgroundimage/11929743_shop2-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </children></Pane>
+               </children></Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

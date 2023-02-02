@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="944.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.TeddyHouse.Controller.CashCustomerController">
+   <children>
+      <AnchorPane layoutX="2.0" layoutY="-2.0" prefHeight="1022.0" prefWidth="1386.0" stylesheets="@Style/Css.css">
+         <children>
+            <Pane layoutX="-6.0" layoutY="36.0" prefHeight="104.0" prefWidth="1600.0" style="-fx-background-color: #6B51B0;">
+               <children>
+                  <Text fill="WHITE" layoutX="478.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TXT-time" text="CUSTOMERS" textAlignment="CENTER" wrappingWidth="467.6708984375" />
+               </children>
+            </Pane>
+            <TableView layoutX="22.0" layoutY="350.0" prefHeight="622.0" prefWidth="1263.0">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="181.99996948242188" text="ID" />
+                  <TableColumn fx:id="name" prefWidth="230.00003051757812" text="NAME" />
+                  <TableColumn fx:id="adress" prefWidth="261.0" text="ADDRESS" />
+                  <TableColumn fx:id="mobilenumber" prefWidth="229.0" text="MOBILE NUMBER" />
+                  <TableColumn fx:id="delete" prefWidth="203.0" text="DELETE" />
+                  <TableColumn fx:id="update" prefWidth="168.0" text="UPDATE" />
+               </columns>
+            </TableView>
+            <JFXButton layoutX="1086.0" layoutY="261.0" onAction="#addOnAction" prefHeight="44.0" prefWidth="194.0" styleClass="My-btn2" text="ADD NEW" />
+            <JFXTextField alignment="CENTER" layoutX="264.0" layoutY="164.0" prefHeight="52.0" prefWidth="821.0" promptText="Search ID Or Name" styleClass="search" unFocusColor="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

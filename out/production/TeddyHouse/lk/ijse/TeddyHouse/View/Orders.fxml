@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.TeddyHouse.Controller.OrdersController">
+   <children>
+      <AnchorPane layoutX="1.0" layoutY="-1.0" prefHeight="1025.0" prefWidth="1591.0" styleClass="txt" stylesheets="@Style/Css.css">
+         <children>
+            <Pane layoutX="-1.0" layoutY="34.0" prefHeight="101.0" prefWidth="1600.0" style="-fx-background-color: #6B51B0;">
+               <children>
+                  <Text fill="WHITE" layoutX="478.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TXT-time" text="ORDERS" textAlignment="CENTER" wrappingWidth="467.6708984375" />
+               </children>
+            </Pane>
+            <JFXButton fx:id="add" layoutX="1086.0" layoutY="261.0" onAction="#AddOrderOnAction" prefHeight="44.0" prefWidth="194.0" styleClass="My-btn2" text="ADD" />
+            <JFXButton fx:id="pay" layoutX="1086.0" layoutY="319.0" onAction="#payOnAction" prefHeight="44.0" prefWidth="194.0" styleClass="My-btn2" text="Pay" />
+            <JFXComboBox fx:id="comboNum" layoutX="50.0" layoutY="255.0" onAction="#numOnAction" prefHeight="28.0" prefWidth="214.0" promptText="Customer ID" styleClass="txt2" unFocusColor="#4d4d4d00" />
+            <JFXComboBox fx:id="comboItemId" layoutX="50.0" layoutY="303.0" onAction="#itemIdOnAction" onKeyReleased="#namek" prefHeight="28.0" prefWidth="214.0" promptText="Item ID" styleClass="txt2" unFocusColor="#4d4d4d00" />
+            <Text fx:id="txtCrustName" layoutX="338.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name" />
+            <Text fx:id="txtItemName" layoutX="338.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" />
+            <Text fx:id="txtPrice" layoutX="569.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+            <JFXTextField fx:id="lblQTY" alignment="CENTER" layoutX="766.0" layoutY="306.0" onKeyReleased="#qtyk" promptText="QTY" styleClass="txt2" unFocusColor="#4d4d4d00" />
+            <Text layoutX="26.0" layoutY="974.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" />
+            <Text fx:id="txtTotal" fill="#1e70ff" layoutX="98.0" layoutY="974.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00" />
+            <TableView fx:id="tbl" layoutX="32.0" layoutY="427.0" prefHeight="463.0" prefWidth="1229.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="228.0" text="ID" />
+                <TableColumn fx:id="colName" prefWidth="335.0" text="NAME" />
+                  <TableColumn fx:id="colQty" prefWidth="330.0" text="QTY" />
+                  <TableColumn fx:id="colPrice" prefWidth="335.0" text="PRICE" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

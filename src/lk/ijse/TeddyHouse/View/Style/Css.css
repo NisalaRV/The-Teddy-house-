@@ -1,0 +1,92 @@
+.my-Button{
+    -fx-background-color: #3D2D61;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-background-radius: 15;
+}
+.my-Button:hover{
+    -fx-background-color: #8168B9;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color: #281E42;
+}
+.TXT-time{
+    -fx-text-fill: white;
+    -fx-font-size: 40;
+    -fx-font-weight: bold;
+
+}
+.TXT-date{
+    -fx-text-fill: white;
+    -fx-font-size: 25;
+
+
+}
+.My-btn2{
+    -fx-background-color: #4AF832;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-background-radius: 50;
+
+}
+.search{
+    -fx-text-fill:#6B51B0 ;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-background-radius: 50;
+    -fx-border-color: black;
+    -fx-border-radius: 50;
+}
+.txt{
+    -fx-text-fill:#5088F1 ;
+    -fx-font-weight: bold;
+    -fx-font-size: 25;
+
+}
+.txt2{
+    -fx-text-fill:#5088F1 ;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-border-color: black;
+    -fx-prompt-text-fill: #595959;
+}
+.txt2:hover{
+    -fx-text-fill:#5088F1 ;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-border-color:#4702FF;
+    -fx-prompt-text-fill: #000000;
+}
+.btn{
+    -fx-background-color: #9166FF;
+    -fx-text-fill:#FFFF ;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+
+}
+.btn:hover{
+    -fx-background-color: #581AFF;
+    -fx-text-fill:#FFFF ;
+    -fx-font-weight: bold;
+    -fx-font-size: 21;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+
+}
+.login-txt{
+    -fx-text-fill: #3D2D61;
+    -fx-font-weight: bold;
+    -fx-font-size: 47;
+
+}

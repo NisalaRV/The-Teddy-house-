@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="992.0" prefWidth="1380.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.TeddyHouse.Controller.BookingController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-3.0" prefHeight="995.0" prefWidth="1380.0" stylesheets="@Style/Css.css">
+         <children>
+            <Pane layoutY="34.0" prefHeight="105.0" prefWidth="1600.0" style="-fx-background-color: #6B51B0;">
+               <children>
+                  <Text fill="WHITE" layoutX="478.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TXT-time" text="BOOKINGS" textAlignment="CENTER" wrappingWidth="467.6708984375" />
+               </children>
+            </Pane>
+            <TableView fx:id="tbl" layoutX="20.0" layoutY="404.0" prefHeight="500.0" prefWidth="1336.0">
+               <columns>
+                  <TableColumn fx:id="bid" prefWidth="215.0" text="ID" />
+                  <TableColumn fx:id="name" prefWidth="331.0" text="NAME" />
+                  <TableColumn fx:id="mobilenumber" prefWidth="261.0" text="MOBILE NUMBER" />
+                  <TableColumn fx:id="date" prefWidth="258.0" text="DATE" />
+                  <TableColumn fx:id="price" prefWidth="255.0" text="PRICE" />
+               </columns>
+            </TableView>
+            <JFXButton layoutX="1141.0" layoutY="930.0" onAction="#AddbookingOnAction" prefHeight="44.0" prefWidth="194.0" styleClass="My-btn2" text="BOOKING" />
+            <JFXTextField fx:id="search" alignment="CENTER" focusColor="#405aa800" layoutX="264.0" layoutY="164.0" onKeyReleased="#searchId" prefHeight="52.0" prefWidth="821.0" promptText="Search Mobile Number" styleClass="search" unFocusColor="#ffffff00" />
+            <JFXTimePicker fx:id="tPTimeNow" defaultColor="#6b51b0" layoutX="41.0" layoutY="246.0" />
+            <JFXDatePicker fx:id="dpDateNow" defaultColor="#6b51b0" layoutX="40.0" layoutY="315.0" />
+            <JFXComboBox fx:id="cmbCrustId" layoutX="285.0" layoutY="247.0" onAction="#cusIdonAction" prefHeight="31.0" prefWidth="177.0" />
+            <Text fx:id="txtCrustName" layoutX="487.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER NAME" wrappingWidth="261.00421142578125">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <Pane layoutX="1111.0" layoutY="229.0" prefHeight="132.0" prefWidth="210.0" style="-fx-background-color: #6B51B0; -fx-background-radius: 30 30 30 0;">
+               <children>
+                  <Text fill="WHITE" layoutX="17.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TODAY BOOKINGS">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtTodayCount" fill="WHITE" layoutX="75.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" wrappingWidth="145.4999903216958">
+                     <font>
+                        <Font name="System Bold" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <JFXTextField fx:id="txtPrice" layoutX="816.0" layoutY="239.0" prefHeight="54.0" prefWidth="271.0" promptText="PRICE" unFocusColor="#4d4d4d00">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
